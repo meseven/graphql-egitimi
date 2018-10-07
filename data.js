@@ -34,7 +34,7 @@ const directors = [
 		id: '3',
 		name: 'Quentin Tarantino',
 		birth: 1963
-	},
+	}
 ];
 
 module.exports = {
