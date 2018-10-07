@@ -1,23 +1,26 @@
 const express = require('express');
 const { ApolloServer, gql } = require('apollo-server-express');
 
+const { directors, movies } = require('./data');
+
 // String, Int, ID, Boolean, Float
 // Construct a schema, using GraphQL schema language
 const typeDefs = gql`
   type Query {
-  	director: Director!
-  	movie: Movie!
+  	director(id: ID!): Director!
+  	movie(id: ID!): Movie!
   }
   
   type Director {
   	id: ID!
   	name: String!
-  	age: Int
+  	birth: Int
   }
   
   type Movie {
   	id: ID!
   	title: String!
+  	description: String
   	year: Int!
   }
 `;
@@ -25,16 +28,12 @@ const typeDefs = gql`
 // Provide resolver functions for your schema fields
 const resolvers = {
 	Query: {
-		director: () => ({
-			id: 'alskjdlasd',
-			name: 'Ahmet',
-			age: 44
-		}),
-		movie: () => ({
-			id: '1',
-			title: 'The Godfather',
-			year: 1960
-		})
+		director: (parent, args) => {
+			return directors.find(director => director.id === args.id)
+		},
+		movie: (parent, args) => {
+			return movies.find(movie => movie.id === args.id)
+		}
 	},
 };
 
