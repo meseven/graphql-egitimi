@@ -25,6 +25,7 @@ const typeDefs = gql`
   	title: String!
   	description: String
   	year: Int!
+  	director: Director!
   }
 `;
 
@@ -41,6 +42,11 @@ const resolvers = {
 		},
 		movies: () => movies
 	},
+	Movie: {
+		director: (parent, args) => {
+			return directors.find(director => director.id === parent.directorId)
+		}
+	}
 };
 
 const server = new ApolloServer({ typeDefs, resolvers });
