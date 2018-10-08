@@ -4,7 +4,7 @@
   "description": "Sıfırdan Her Yönüyle GraphQL + Apollo",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon app.js",
+    "start:dev": "nodemon --ext js,graphql app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "apollo-server-express": "^2.1.0",
     "express": "^4.16.3",
-    "graphql": "^14.0.2"
+    "graphql": "^14.0.2",
+    "graphql-import": "^0.7.1"
   }
 }
