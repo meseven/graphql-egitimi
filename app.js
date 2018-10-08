@@ -15,8 +15,20 @@ const typeDefs = gql`
   }
   
   type Mutation{
-  	createDirector(name: String!, birth: Int): Director!
-  	createMovie(title: String!, description: String, year: Int!, directorId: ID!): Movie! 
+  	createDirector(data: CreateDirectorInput!): Director!
+  	createMovie(data: CreateMovieInput!): Movie! 
+  }
+  
+  input CreateDirectorInput {
+  	name: String!, 
+  	birth: Int
+  }
+  
+  input CreateMovieInput {
+  	title: String!, 
+  	description: String, 
+  	year: Int!, 
+  	directorId: ID!
   }
   
   type Director {
@@ -52,14 +64,14 @@ const resolvers = {
 		createDirector: (parent, args) => {
 			const director = {
 				id: Math.random().toString(36).substr(2,10),
-				...args
+				...args.data
 			};
 			directors.push(director);
 
 			return director;
 		},
 		createMovie: (parent, args) => {
-			const directorExists = directors.some(director => director.id === args.directorId);
+			const directorExists = directors.some(director => director.id === args.data.directorId);
 
 			if (!directorExists) {
 			  throw new Error('Director does not exists.');
@@ -67,7 +79,7 @@ const resolvers = {
 
 			const movie = {
 				id: Math.random().toString(36).substr(2,10),
-				...args
+				...args.data
 			};
 
 			movies.push(movie);
