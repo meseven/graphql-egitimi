@@ -52,8 +52,7 @@ const resolvers = {
 		createDirector: (parent, args) => {
 			const director = {
 				id: Math.random().toString(36).substr(2,10),
-				name: args.name,
-				birth: args.birth
+				...args
 			};
 			directors.push(director);
 
@@ -68,10 +67,7 @@ const resolvers = {
 
 			const movie = {
 				id: Math.random().toString(36).substr(2,10),
-				title: args.title,
-				description: args.description,
-				year: args.year,
-				directorId: args.directorId
+				...args
 			};
 
 			movies.push(movie);
