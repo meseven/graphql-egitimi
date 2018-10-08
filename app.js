@@ -2,34 +2,33 @@ const express = require('express');
 const { ApolloServer, gql } = require('apollo-server-express');
 const { importSchema } =  require('graphql-import');
 
-const { directors, movies } = require('./data');
-
+const db = require('./data');
 
 // Provide resolver functions for your schema fields
 const resolvers = {
 	Query: {
-		director: (parent, args) => {
-			return directors.find(director => director.id === args.id)
+		director: (parent, args, { db }) => {
+			return db.directors.find(director => director.id === args.id)
 		},
-		directors: () => directors,
+		directors: (parent, args, { db }) => db.directors,
 
-		movie: (parent, args) => {
-			return movies.find(movie => movie.id === args.id)
+		movie: (parent, args, { db }) => {
+			return db.movies.find(movie => movie.id === args.id)
 		},
-		movies: () => movies
+		movies: (parent, args, { db }) => db.movies
 	},
 	Mutation: {
-		createDirector: (parent, args) => {
+		createDirector: (parent, args, { db }) => {
 			const director = {
 				id: Math.random().toString(36).substr(2,10),
 				...args.data
 			};
-			directors.push(director);
+			db.directors.push(director);
 
 			return director;
 		},
-		createMovie: (parent, args) => {
-			const directorExists = directors.some(director => director.id === args.data.directorId);
+		createMovie: (parent, args, { db} ) => {
+			const directorExists = db.directors.some(director => director.id === args.data.directorId);
 
 			if (!directorExists) {
 			  throw new Error('Director does not exists.');
@@ -40,26 +39,29 @@ const resolvers = {
 				...args.data
 			};
 
-			movies.push(movie);
+			db.movies.push(movie);
 
 			return movie;
 		}
 	},
 	Movie: {
-		director: (parent, args) => {
-			return directors.find(director => director.id === parent.directorId)
+		director: (parent, args, { db }) => {
+			return db.directors.find(director => director.id === parent.directorId)
 		}
 	},
 	Director: {
-		movies: (parent, args) => {
-			return movies.filter(movie => movie.directorId === parent.id)
+		movies: (parent, args, { db }) => {
+			return db.movies.filter(movie => movie.directorId === parent.id)
 		}
 	}
 };
 
 const server = new ApolloServer({
 	typeDefs: importSchema('./graphql/schema/schema.graphql'),
-	resolvers
+	resolvers,
+	context: {
+		db
+	}
 });
 
 const app = express();
