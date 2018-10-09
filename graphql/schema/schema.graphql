@@ -1,40 +1,11 @@
-type Query {
-    director(id: ID!): Director!
-    directors: [Director!]!
+# import Query from "./types/director.graphql"
+# import Mutation from "./types/director.graphql"
 
-    movie(id: ID!): Movie!
-    movies: [Movie!]!
-    
-}
+# import Query from "./types/movie.graphql"
+# import Mutation from "./types/movie.graphql"
 
-type Mutation{
-    createDirector(data: CreateDirectorInput!): Director!
-    createMovie(data: CreateMovieInput!): Movie!
-}
 
-input CreateDirectorInput {
-    name: String!,
-    birth: Int
-}
 
-input CreateMovieInput {
-    title: String!,
-    description: String,
-    year: Int!,
-    directorId: ID!
-}
 
-type Director {
-    id: ID!
-    name: String!
-    birth: Int
-    movies: [Movie!]!
-}
 
-type Movie {
-    id: ID!
-    title: String!
-    description: String
-    year: Int!
-    director: Director!
-}
+
