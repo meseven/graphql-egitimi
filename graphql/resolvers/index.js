@@ -1,7 +1,7 @@
 // query resolvers
-const Query = require('./Query');
-const Director = require('./Director');
-const Movie = require('./Movie');
+const Query = require('./query/Query');
+const Director = require('./query/Director');
+const Movie = require('./query/Movie');
 
 // mutation resolvers
 const Mutation = require('./mutation/index');
