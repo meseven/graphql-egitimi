@@ -9,7 +9,7 @@ const db = require('./data');
 const resolvers = require('./graphql/resolvers/index');
 
 const server = new ApolloServer({
-	typeDefs: importSchema('./graphql/schema/schema.graphql'),
+	typeDefs: importSchema('./graphql/schema.graphql'),
 	resolvers,
 	context: {
 		db
