@@ -133,3 +133,7 @@ Projenin `Node + GraphQL + Apollo` backend'ini [`Heroku`](https://heroku.com) ü
 ### Sonuç
 
 Kursta görüşmek üzere :)
+
+**Kurs Linki:** [Tıklayın](https://www.udemy.com/graphql-apollo-egitimi/?couponCode=GJS24M)
+
+**Kupon Kodu:** GJS24M
