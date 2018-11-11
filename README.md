@@ -84,7 +84,7 @@ Bu bölümde genel olarak aşağıdaki kavramlara hakim olacaksınız.
 
 
 
-### Easysnap Projesi
+## Easysnap Projesi
 
 Bu bölümde genel olarak aşağıdaki kavramlara hakim olacaksınız.
 
