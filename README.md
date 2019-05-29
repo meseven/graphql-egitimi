@@ -1,17 +1,16 @@
 # Sıfırdan Her Yönüyle GraphQL ve Apollo
 
-Udemy üzerinde yayınlanan ["Sıfırdan Her Yönüyle GraphQL ve Apollo"](https://www.udemy.com/graphql-apollo-egitimi/?couponCode=GJS24M) adlı eğitim setinde yazılan kaynak kodları barındıran repodur.
+Udemy üzerinde yayınlanan ["Sıfırdan Her Yönüyle GraphQL ve Apollo"](http://bit.ly/graphqm) adlı eğitim setinde yazılan kaynak kodları barındıran repodur.
 
-**Kurs Linki:** [Tıklayın](https://www.udemy.com/graphql-apollo-egitimi/?couponCode=GJS24M)
+**Kurs Linki:** [Tıklayın](http://bit.ly/graphqm)
 
-**Kupon Kodu:** GJS24M
+**Kupon Kodu:** MMJS34M
 
-
-![graphql apollo eğitim seti](https://mehmetseven.net/content/images/2018/11/graphql-apollo-nodejs-react-mehmet-seven.jpg)
+[![graphql apollo eğitim seti](https://mehmetseven.net/content/images/2018/11/graphql-apollo-nodejs-react-mehmet-seven.jpg)](http://bit.ly/graphqm)
 
 2017 yılının son aylarından beri kendimi adadığım modern web teknolojilerini Türkçe olarak anlatma konusundaki üçüncü adımı atmanın mutluluk ve gururunu yaşıyorum.
 
-**"Sıfırdan Her Yönüyle"** yolculuğun ilk iki adımını [Node.JS](https://goo.gl/n87XxS) ve [React](https://goo.gl/7eGkcS) kursları ile atmıştık. Şimdi sıra, bu iki teknolojiyi kullanarak `GraphQL` ve `Apollo` mevzusunu projeler geliştirerek öğrenmekte.
+**"Sıfırdan Her Yönüyle"** yolculuğun ilk iki adımını [Node.JS](http://bit.ly/ndjsm) ve [React](http://bit.ly/reactm) kursları ile atmıştık. Şimdi sıra, bu iki teknolojiyi kullanarak `GraphQL` ve `Apollo` mevzusunu projeler geliştirerek öğrenmekte.
 
 Kurs `Udemy` üzerinde yayınlanıyor ve toplamda 10 saatlik videolardan oluşuyor. Videolar tamamen 60fps ve 1080p kalitede hazırlandı. Ayrıca ses profesyonel mikrofon ve ses kartı ile kaydedildi.
 
@@ -80,7 +79,7 @@ Bu bölümde genel olarak aşağıdaki kavramlara hakim olacaksınız.
 
 -[Demo](http://graphql-movieapp.surge.sh/)
 
--[GraphiQL](http://54.86.4.87:5000/graphql)
+-[GraphiQL](http://18.206.204.162:5000/graphql)
 
 
 
@@ -129,12 +128,12 @@ Projenin `Node + GraphQL + Apollo` backend'ini [`Heroku`](https://heroku.com) ü
 
 -[Demo](http://easysnap.surge.sh/)
 
--[GraphQL Playground](http://54.86.4.87:4001/graphql)
+-[GraphQL Playground](http://18.206.204.162:4001/graphql)
 
 ### Sonuç
 
 Kursta görüşmek üzere :)
 
-**Kurs Linki:** [Tıklayın](https://www.udemy.com/graphql-apollo-egitimi/?couponCode=GJS24M)
+**Kurs Linki:** [Tıklayın](http://bit.ly/graphqm)
 
-**Kupon Kodu:** GJS24M
+**Kupon Kodu:** MMJS34M
