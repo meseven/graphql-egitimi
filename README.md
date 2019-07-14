@@ -123,7 +123,7 @@ Projenin `Node + GraphQL + Apollo` backend'ini [`Heroku`](https://heroku.com) ü
 
 -[Demo](http://easysnap.surge.sh/)
 
--[GraphQL Playground](http://18.206.204.162:4001/graphql)
+-[GraphQL Playground](http://206.189.182.169:4001/graphql)
 
 ### Sonuç
 
