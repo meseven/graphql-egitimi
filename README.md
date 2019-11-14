@@ -1,16 +1,15 @@
 # Sıfırdan Her Yönüyle GraphQL ve Apollo
 
-Udemy üzerinde yayınlanan ["Sıfırdan Her Yönüyle GraphQL ve Apollo"](http://bit.ly/graphqm) adlı eğitim setinde yazılan kaynak kodları barındıran repodur.
+Udemy üzerinde yayınlanan ["Sıfırdan Her Yönüyle GraphQL ve Apollo"](http://bit.ly/graphql_) adlı eğitim setinde yazılan kaynak kodları barındıran repodur.
 
-**Kurs Linki:** [Tıklayın](http://bit.ly/graphqm)
+**Kurs Linki:** [Tıklayın](http://bit.ly/graphql_)
 
-**Kupon Kodu:** MMJS34M
 
-[![graphql apollo eğitim seti](https://mehmetseven.net/content/images/2018/11/graphql-apollo-nodejs-react-mehmet-seven.jpg)](http://bit.ly/graphqm)
+[![graphql apollo eğitim seti](https://mehmetseven.net/content/images/2018/11/graphql-apollo-nodejs-react-mehmet-seven.jpg)](http://bit.ly/graphql_)
 
 2017 yılının son aylarından beri kendimi adadığım modern web teknolojilerini Türkçe olarak anlatma konusundaki üçüncü adımı atmanın mutluluk ve gururunu yaşıyorum.
 
-**"Sıfırdan Her Yönüyle"** yolculuğun ilk iki adımını [Node.JS](http://bit.ly/ndjsm) ve [React](http://bit.ly/reactm) kursları ile atmıştık. Şimdi sıra, bu iki teknolojiyi kullanarak `GraphQL` ve `Apollo` mevzusunu projeler geliştirerek öğrenmekte.
+**"Sıfırdan Her Yönüyle"** yolculuğun ilk iki adımını [Node.JS](http://bit.ly/nodejs_) ve [React](http://bit.ly/reactredux_) kursları ile atmıştık. Şimdi sıra, bu iki teknolojiyi kullanarak `GraphQL` ve `Apollo` mevzusunu projeler geliştirerek öğrenmekte.
 
 Kurs `Udemy` üzerinde yayınlanıyor ve toplamda 10 saatlik videolardan oluşuyor. Videolar tamamen 60fps ve 1080p kalitede hazırlandı. Ayrıca ses profesyonel mikrofon ve ses kartı ile kaydedildi.
 
@@ -129,6 +128,6 @@ Projenin `Node + GraphQL + Apollo` backend'ini [`Heroku`](https://heroku.com) ü
 
 Kursta görüşmek üzere :)
 
-**Kurs Linki:** [Tıklayın](http://bit.ly/graphqm)
+**Kurs Linki:** [Tıklayın](http://bit.ly/graphql_)
 
 **Kupon Kodu:** MMJS34M
