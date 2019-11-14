@@ -129,5 +129,3 @@ Projenin `Node + GraphQL + Apollo` backend'ini [`Heroku`](https://heroku.com) ü
 Kursta görüşmek üzere :)
 
 **Kurs Linki:** [Tıklayın](http://bit.ly/graphql_)
-
-**Kupon Kodu:** MMJS34M
